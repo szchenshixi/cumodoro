@@ -135,10 +135,10 @@ class Interface:
             taskswitcher = globals.interface.windows["Timer"].frames["taskswitcher_frame"]
             target.erase()
             width = 14
-            start = int((target.size[0] - width) / 2)-1
-            target.addstr(start,0,"\u25D6")
-            target.addstr(start+width-1,0,"\u25D7")
-            target.addstr(start+1,0,"\u25A0"*(width-2),curses.color_pair(taskswitcher.get_color()))
+            #  start = int((target.size[0] - width) / 2)-1
+            #  target.addstr(start,0,"\u25D6")
+            #  target.addstr(start+width-1,0,"\u25D7")
+            #  target.addstr(start+1,0,"\u25A0"*(width-2),curses.color_pair(taskswitcher.get_color()))
         frame.update = types.MethodType(update_patch,frame)
         window.add_frame(frame.name,frame)
 

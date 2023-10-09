@@ -14,7 +14,7 @@ log = logging.getLogger('cumodoro')
 class Taskview(Frame):
     def __init__(self):
         super().__init__()
-        self.shapes = ['\u25CF']
+        self.shapes = ['\u2B24']
         self.edit_task_list = []
 
     def update(self):

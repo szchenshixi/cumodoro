@@ -22,9 +22,10 @@ class Banner(Frame):
             self.chgat(i*self.widthpc+offset,0,1,curses.A_BOLD|curses.A_UNDERLINE)
             if i == self.current_window:
                 self.chgat(i*self.widthpc+2,0,self.widthpc-4,curses.A_BOLD)
-                self.addstr(i*self.widthpc+2+1,1,"\u25A0"*(self.widthpc-4-2))
-                self.addstr(i*self.widthpc+2,1,"\u25D6")
-                self.addstr(i*self.widthpc+2+self.widthpc-4-1,1,"\u25D7")
+                #  self.addstr(i*self.widthpc+2+1,1,"\u25A0"*(self.widthpc-4-2))
+                self.addstr(i*self.widthpc+2+1,1,"\u2594"*(self.widthpc-4-2))
+                #  self.addstr(i*self.widthpc+2,1,"\u25D6")
+                #  self.addstr(i*self.widthpc+2+self.widthpc-4-1,1,"\u25D7")
 
     def create(self):
         X = globals.X

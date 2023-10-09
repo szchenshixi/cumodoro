@@ -16,7 +16,7 @@ log = logging.getLogger('cumodoro')
 class Weekview(Frame):
     def __init__(self):
         super(Weekview,self).__init__()
-        self.shapes = ['\u25CF','\u25C6','\u25A0','\u25B2','\u25B6','\u25BC','\u25C0','\u25D0','\u25D1','\u25D2','\u25D3','\u25E7','\u25E8','\u25E9','\u25EA', '\u25ED', '\u25EE','\u2738','\u2691','\u272A','\u263B','\u2665','\u2663','\u2660','\u25B0' ]
+        self.shapes = ['\u2B24','\u25C6','\u25A0','\u25B2','\u25B6','\u25BC','\u25C0','\u25D0','\u25D1','\u25D2','\u25D3','\u25E7','\u25E8','\u25E9','\u25EA', '\u25ED', '\u25EE','\u2738','\u2691','\u272A','\u263B','\u2665','\u2663','\u2660','\u25B0' ]
         self.switcher = globals.interface.windows["Weekview"].frames["weekswitcher_frame"]
         self.width = 0
         self.edit = 0

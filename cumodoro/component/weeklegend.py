@@ -65,10 +65,10 @@ class Weeklegend(Frame):
     def print_colors(self):
         for x in range(len(self.weekview.colors)):
             c = self.weekview.colors[x]
-            self.addstr(4+3*x,24,'\u25CF',curses.color_pair(c))
+            self.addstr(4+3*x,24,'\u2B24',curses.color_pair(c))
 
         for x in range(16):
-            self.addstr(4+3*x,21,'\u25CF',curses.color_pair(x))
+            self.addstr(4+3*x,21,'\u2B24',curses.color_pair(x))
             self.addstr(4+3*x,22,str(x))
         rows = 20
 
@@ -81,7 +81,7 @@ class Weeklegend(Frame):
                 d = int(yi/rows)
                 xi = xi + (d*20)
                 yi = yi % rows
-                self.addstr(xi,yi,'\u25CF',curses.color_pair(16+y*6+x))
+                self.addstr(xi,yi,'\u2B24',curses.color_pair(16+y*6+x))
                 self.addstr(xi,yi+1,str(x%10))
 
         for y in range(10):

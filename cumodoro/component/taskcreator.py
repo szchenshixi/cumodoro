@@ -136,7 +136,7 @@ class Taskcreator(Frame):
 
         # FIXME color
         #self.addstr(2,0,'\u25CF',curses.color_pair(colors[self.current_color_idx]))
-        self.addstr(2,0,'\u25CF',curses.color_pair(self.current_color_idx))
+        self.addstr(2,0,'\u2B24',curses.color_pair(self.current_color_idx))
 
         #if self.current_color_idx < len(colors) - 2:
         if self.current_color_idx < 256:

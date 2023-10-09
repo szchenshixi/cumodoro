@@ -411,7 +411,7 @@ class Taskeditor(Frame):
             else:
                 self.addstr(level_width*level,offset+row[0],'\u2514')
 
-            self.addstr(level_width*level+3,offset+row[0],'\u25CF',curses.color_pair(e.color))
+            self.addstr(level_width*level+3,offset+row[0],'\u2B24',curses.color_pair(e.color))
             if self.selected_input and self.current == current and self.state != "insert":
                 if self.state == "move":
                     self.addstr(level_width*level+offset2,offset+row[0],e.desc,curses.A_BOLD|curses.color_pair(1))
